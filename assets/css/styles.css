@@ -98,3 +98,17 @@ div.col-md-6.col-md-push-6.item.text {
   text-align:center;
 }
 
+img {
+  margin-left:auto;
+  margin-right:auto;
+  max-height:700px;
+}
+
+img {
+  max-height:550px;
+}
+
+div#carousel-1.carousel.slide {
+  background-color:rgba(255,255,255,0.90);
+}
+
