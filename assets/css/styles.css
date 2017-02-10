@@ -1,29 +1,50 @@
+body {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#logo {
+  max-height:30px;
+}
+
+#logo2 {
+  max-height:158px;
+  max-width:100%;
+}
+
 #promo {
   text-align:center;
   padding:40px;
-  background:url(../../assets/img/black.jpg) no-repeat;
+  background:url(../../assets/img/djings.jpg) no-repeat;
   background-size:cover;
   margin-top:65px;
 }
 
 @media (max-width:991px) {
-  #promo {
+  div.jumbotron {
     padding:20px;
   }
 }
 
-#promo .jumbotron {
+div.jumbotron {
   border-radius:20px;
   padding:40px;
   background-color:rgba(255,255,255,0.75);
   max-width:800px;
-  margin:0 auto;
+  margin:auto;
 }
 
 @media (max-width:991px) {
-  #promo .jumbotron {
+  div.jumbotron {
     padding:20px;
   }
+}
+
+i.glyphicon.glyphicon-adjust {
+  font-size:50px;
+}
+
+div.dark-section {
+  background-color:rgba(0,0,1,0.1);
 }
 
 .site-section {
@@ -43,122 +64,58 @@
   margin:0 auto;
 }
 
-#what .item {
+#why.container.site-section {
+}
+
+#why p {
+  max-width:800px;
+  font-size:20px;
+  margin:0 auto;
+}
+
+#why .design {
   padding-top:36px;
 }
 
-#what .item p {
-  font-size:17px;
+#why .design {
+  font-size:45px;
 }
 
-#what .item h2 {
-  font-size:23px;
+#why h2 {
   font-weight:normal;
-  margin-bottom:20px;
-  margin-top:13px;
 }
 
-#what .item i {
-  font-size:40px;
-  color:#8c8989;
+#why .design i {
+  font-size:45px;
+  color:rgb(1,1,1);
 }
 
-.dark-section {
-  background-color:#292c2f;
+h3 {
+  color:rgb(254,254,254);
 }
 
-#logo1 {
-  max-height:231px;
-  max-width:100%;
-}
-
-#LOGOWHITE {
-  max-height:42px;
-  max-width:100%;
-  display:inline-block;
-}
-
-a#logosquare.navbar-brand.navbar-link {
-  padding-bottom:55px;
-}
-
-ul#navgroup.nav.navbar-nav.navbar-right {
-  padding-top:16px;
-}
-
-#snake {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#mirador {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#geisha {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#alchemy {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#moonfire {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#seventies {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#beach {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#monk {
-  max-height:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#footerlogo {
-  max-height:109px;
-  margin-left:auto;
-  margin-right:auto;
-  padding-left:31px;
-  padding-top:39px;
-}
-
-p#company.company-name {
+div.col-md-6.col-md-push-6.item.text {
   text-align:center;
 }
 
-img#circle {
-  max-height:200px;
-  margin-left:66px;
+img {
+  margin-left:auto;
+  margin-right:auto;
+  max-height:700px;
 }
 
-@media (max-width:767px) {
-  img#circle {
-    margin-left:26px;
-    margin-bottom:32px;
-  }
+img {
+  max-height:550px;
 }
 
-#carousel-1.carousel.slide {
-  padding-top:30px;
+div#carousel-1.carousel.slide {
+  background-color:rgba(255,255,255,0.90);
+}
+
+div#portfolio.container.site-section {
+}
+
+div.carousel-inner {
+  background-color:white;
 }
 
