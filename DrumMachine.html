@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DrumMachine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+  <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/drumstyle.css">
+  <link rel="stylesheet" href="assets/css/drumstyle.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand navbar-link" href="index.html" id="logosquare"> <img src="assets/img/WHITEJoelSaiehLogo.png" id="LOGOWHITE"></a>
+              <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav navbar-right" id="navgroup">
+                  <li role="presentation"><a href="index.html#what">What Can I Do?</a></li>
+                  <li role="presentation"><a href="index.html#portfolio">Portfolio </a></li>
+                  <li role="presentation"><a href="index.html#quote">Quote </a></li>
+                  <li role="presentation"><a href="#extras">Extras </a></li>
+                  <li role="presentation"><a href="DrumMachine.html">DrumMachine </a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+  <footer>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 footer-navigation">
+              <h3><a href="#"> </a><img src="assets/img/circle.png" id="circle"></h3></div>
+          <div class="col-md-4 col-sm-6 footer-contacts">
+              <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                  <p><span class="new-line-span">Carrera 49c # 99 - 106</span>Barranquilla, Colombia.</p>
+              </div>
+              <div><i class="fa fa-phone footer-contacts-icon"></i>
+                  <p class="footer-center-info email text-left">+57 315-207-3273</p>
+              </div>
+              <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                  <p> <a href="#" target="_blank">joel.saieh@hotmail.com</a></p>
+              </div>
+          </div>
+          <div class="clearfix visible-sm-block"></div>
+          <div class="col-md-4 footer-about">
+              <h4 id="extras">Extras about me</h4>
+              <p id="footerP">The other side of my life is that I am a Kitesurf instructor and DJ. I love spending my time in the ocean been inside it has always been one of my biggest passions. Right now I'm making my living as a Digital nomad working as a Freelance
+                  and DJing on the go. Down here I put my soundcloud and mixcloud profiles in case you like Electronic Music. Enjoy!</p>
+              <div class="social-links social-icons"><a href="https://www.behance.net/joelsaieh" target="_blank"><i class="fa fa-behance-square"></i></a><a href="http://joelsaieh.deviantart.com/" target="_blank"><i class="fa fa-deviantart"></i></a><a href="https://www.mixcloud.com/ephemeroz/"
+                  target="_blank"><i class="fa fa-mixcloud"></i></a><a href="https://soundcloud.com/ephemeroz" target="_blank"><i class="fa fa-soundcloud"></i></a></div>
+          </div>
+      </div>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+  function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    e.target.classList.remove('playing');
+  }
+
+  function playSound(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    if (!audio) return;
+
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+  }
+
+  const keys = Array.from(document.querySelectorAll('.key'));
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  window.addEventListener('keydown', playSound);
+</script>
+
+
+</body>
+</html>
