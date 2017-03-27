@@ -101,14 +101,14 @@
 #video-elem {
     position: absolute;
     background: no-repeat;
-    top: 150;
+    top: -130;
     right: 0;
     bottom: 0;
     left: 0;
     overflow: hidden;
     z-index: -100;
     margin-bottom: 0px;
-    padding-top: 100px;
+    padding-top: 0px;
     width: 100%;
 
 }
