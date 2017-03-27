@@ -101,7 +101,7 @@
 #video-elem {
     position: absolute;
     background: no-repeat;
-    top: -150;
+    top: -150px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -110,6 +110,27 @@
     margin-bottom: 0px;
     padding-top: 0px;
     width: 100%;
+}
+
+@media screen and (max-width: 47.938em) {  
+  #video-elem {
+    top: -30px;
+  } 
+  .site-section h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 8vw;
+}
+  #welcome p {
+    font-size: 4vw;
+    color: #ffffff;
+    background: -moz-linear-gradient(top, rgba(249,249,249,0) 0%, rgba(2,2,2,1) 99%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(249,249,249,0) 0%,rgba(2,2,2,1) 99%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(249,249,249,0) 0%,rgba(2,2,2,1) 99%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f9f9f9', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+  
+  
 }
 
 #LOGOWHITE {
